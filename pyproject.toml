@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "glyphconstructionissue"
+version = "0.1.0"
+description = ""
+authors = ["Roberto Arista <arista.rob@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fontparts = "^0.11.0"
+GlyphConstruction = { git = "https://github.com/typemytype/GlyphConstruction.git" }
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+
+[tool]
+black = { line-length = 120 }
+isort = { profile = "black" }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
